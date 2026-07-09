@@ -1,31 +1,127 @@
-# Django Project Running Guide:-
+# Inventory Management System
 
-Editors: Use Visual studio code or Pycharm IDE or Any IDE you comfortable with.
+A web-based **Inventory Management System** built using **Django** and **MySQL**. This application helps manage inventory, products, categories, and orders through a user-friendly interface and Django's admin panel.
 
-STEP 1: Open integrated terminal.
+## Features
 
-STEP 2: Run this command to create virtual environment => py -3 -m venv .venv.
+- User Authentication
+- Inventory Management
+- Product Management
+- Category Management
+- Order Management
+- Django Admin Panel
+- MySQL Database Integration
 
-STEP 3: Activate virtual environment => .venv/Scripts/activate [.venv\Script\activate if you are using CMD].
+## Technologies Used
 
-STEP 4: Install reuired packages => pip install django mysqlclient pillow (or) pip install -r requirements.txt.
+- Python
+- Django
+- MySQL
+- HTML
+- CSS
+- Bootstrap
 
-STEP 5: Create a database in mysql in the name "django_db".
+## Project Structure
 
-STEP 6: python manage.py makemigrations.
+```
+Inventory/
+OrderManagement/
+authentication/
+templates/
+static/
+manage.py
+requirements.txt
+```
 
-STEP 7: python manage.py migrate.
+## Installation
 
-STEP 8: python manage.py runserver.
+### 1. Clone the repository
 
-STEP 9: Open the website in browser.
+```bash
+git clone https://github.com/Vicky27032002/inventory-management-system.git
+```
 
-STEP 10: Back to IDE and turn off the server by click Control + C in terminal.
+### 2. Create a virtual environment
 
-STEP 11: Create Super User with the command python manage.py createsuperuser.
+```bash
+python -m venv venv
+```
 
-STEP 12: Run Server Again.
+### 3. Activate the virtual environment
 
-STEP 13: Now Login with the super user.
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Create a MySQL database
+
+Create a database named:
+
+```
+django_series_db
+```
+
+Update the database credentials in `settings.py`.
+
+### 6. Apply migrations
+
+```bash
+python manage.py migrate
+```
+
+### 7. Create a superuser
+
+```bash
+python manage.py createsuperuser
+```
+
+### 8. Run the development server
+
+```bash
+python manage.py runserver
+```
+
+Open:
+
+```
+http://127.0.0.1:8000/
+```
+
+## Screenshots
 
 
+```
+screenshots/
+├── login.png
+├── customers.png
+├── orders.png
+├── products.png
+```
+
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Customer Management
+![Dashboard](screenshots/customers.png)
+
+### Orders Management
+![Inventory](screenshots/orders.png)
+
+### Products Management
+![Orders](screenshots/products.png)
+
+
+## Author
+
+**Vignesh R**
+
+GitHub: https://github.com/Vicky27032002
